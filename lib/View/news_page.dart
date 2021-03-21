@@ -1,7 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod1/Model/NewsModel.dart';
+import 'package:state_managment/Model/NewsModel.dart';
+
+
 
 final fetchNewsData = FutureProvider.autoDispose<NewsModel>((ref) async {
   Dio dio = Dio();

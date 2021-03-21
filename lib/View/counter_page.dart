@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod1/Widgets/custom_button.dart';
+import 'package:state_managment/Widgets/custom_button.dart';
 
 final counter = StateProvider<int>((ref) => 0);
 

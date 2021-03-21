@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riverpod1/Widgets/custom_button.dart';
+import 'package:state_managment/Widgets/custom_button.dart';
 
 import 'counter_page.dart';
 import 'news_page.dart';
