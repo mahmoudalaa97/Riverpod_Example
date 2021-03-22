@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_managment/Model/UserGithubDataModel.dart';
-import 'package:state_managment/Services/github_repository.dart';
+import 'package:state_managment/Services/Repositories/github_repository.dart';
 
 final getDataForUser =
     FutureProvider.autoDispose<UserGithubDataModel>((ref) async {

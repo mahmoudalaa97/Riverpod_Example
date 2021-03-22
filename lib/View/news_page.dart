@@ -2,19 +2,14 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_managment/Model/NewsModel.dart';
+import 'package:state_managment/Services/Repositories/news_repository.dart';
 
 
 
 final fetchNewsData = FutureProvider.autoDispose<NewsModel>((ref) async {
-  Dio dio = Dio();
-  NewsModel _newsModel;
-  const url =
-      "https://newsapi.org/v2/everything?q=Apple&from=2021-03-20&sortBy=popularity&apiKey=4419d327234140b6b60bb2f4874aa8f1";
-  Response response = await dio.get(url);
-  if (response.statusCode == 200) {
-    _newsModel = NewsModel.fromJson(response.data);
-  }
-  return _newsModel;
+   NewsRepository _newsRepository= NewsRepositoryLocal();
+
+  return _newsRepository.fetchAllNews();
 });
 
 class NewsPage extends ConsumerWidget {
