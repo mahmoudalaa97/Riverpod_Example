@@ -12,18 +12,18 @@ class Buttons extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: 45,
-        width: 100,
         margin: EdgeInsets.all(10),
+        padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
             color: Colors.blue, borderRadius: BorderRadius.circular(5)),
-        child: Center(
-            child: Text(
-          "$title",
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 15,
-          ),
-        )),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Center(
+                child: Text("$title",
+                    style: const TextStyle(color: Colors.white, fontSize: 15)))
+          ],
+        ),
       ),
     );
   }

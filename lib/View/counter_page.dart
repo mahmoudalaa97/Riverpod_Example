@@ -20,7 +20,7 @@ class CounterPage extends StatelessWidget {
               builder: (context, watch, child) =>
                   Text("Counter ${watch(counter).state}"),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 50,),
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
