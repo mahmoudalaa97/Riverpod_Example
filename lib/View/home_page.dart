@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:state_managment/View/github_search_page.dart';
 import 'package:state_managment/Widgets/custom_button.dart';
 
 import 'counter_page.dart';
@@ -34,6 +35,16 @@ class MyHomePage extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => NewsPage(),
+                    ));
+              },
+            ),
+            Buttons(
+              title: "Github Search Page",
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => GithubSearchPage(),
                     ));
               },
             )
