@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../constant.dart';
+import '../ServicesConstant.dart';
 
 /// APP Interceptor
 /// This Interceptor handle error and response request for each dio request
