@@ -1,9 +1,8 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:state_managment/Model/NewsModel.dart';
 import 'package:state_managment/Services/Repositories/news_repository.dart';
-
+import '../utils/extentions.dart';
 
 
 final fetchNewsData = FutureProvider.autoDispose<NewsModel>((ref) async {
@@ -29,6 +28,7 @@ class NewsPage extends ConsumerWidget {
               itemBuilder: (context, index) {
                 return Card(
                   elevation: 4,
+                  color: Theme.of(context).colorScheme.gridViewButtonColor,
                   child: ListTile(
                     title: Text("${value.articles[index].title}"),
                     subtitle: Text("${value.articles[index].description}"),

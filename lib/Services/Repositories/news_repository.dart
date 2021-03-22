@@ -45,6 +45,5 @@ class NewsRepositoryLocal extends NewsRepository {
     return Future.delayed(Duration(seconds: 5),(){
       return _newsModel;
     });
-    throw UnimplementedError();
   }
 }

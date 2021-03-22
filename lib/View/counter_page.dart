@@ -26,11 +26,15 @@ class CounterPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Buttons(
+                  height: 50,
+                    width: 50,
                     title: "+",
                     onTap: () {
                       provider.state++;
                     }),
                 Buttons(
+                  height: 50,
+                    width: 50,
                     title: "-",
                     onTap: () {
                       provider.state--;

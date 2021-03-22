@@ -14,42 +14,45 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Mahmoud Riverpod"),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Buttons(
-              title: "Counter Page",
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => CounterPage(),
-                    ));
-              },
-            ),
-            Buttons(
-              title: "News Page",
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => NewsPage(),
-                    ));
-              },
-            ),
-            Buttons(
-              title: "Github Search Page",
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => GithubSearchPage(),
-                    ));
-              },
-            )
-          ],
+      body: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          childAspectRatio: 1.8,
+          mainAxisSpacing: 5,
         ),
+        shrinkWrap: true,
+        children: <Widget>[
+          Buttons(
+            title: "Counter Page",
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CounterPage(),
+                  ));
+            },
+          ),
+          Buttons(
+            title: "News Page",
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NewsPage(),
+                  ));
+            },
+          ),
+          Buttons(
+            title: "Github Search Page",
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GithubSearchPage(),
+                  ));
+            },
+          )
+        ],
       ),
     );
   }
