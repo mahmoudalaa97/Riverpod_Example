@@ -32,7 +32,7 @@ dependencies:
   cached_network_image: ^2.5.1
   dio: ^3.0.10
 
-
+  font_awesome_flutter: ^9.0.0
 
 
 
