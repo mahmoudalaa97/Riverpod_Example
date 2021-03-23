@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'View/home_page.dart';
+import 'home_page.dart';
 import 'utils/extentions.dart';
 
 void main() {

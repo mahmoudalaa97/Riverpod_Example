@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:state_managment/View/github_search_page.dart';
 import 'package:state_managment/Widgets/custom_button.dart';
 
-import 'counter_page.dart';
-import 'news_page.dart';
+import 'View/counter_page.dart';
+import 'View/news_page.dart';
 
 class MyHomePage extends StatelessWidget {
   @override

@@ -5,8 +5,8 @@ import 'package:state_managment/Services/Repositories/news_repository.dart';
 import '../utils/extentions.dart';
 
 
-final fetchNewsData = FutureProvider.autoDispose<NewsModel>((ref) async {
-   NewsRepository _newsRepository= NewsRepositoryLocal();
+final fetchNewsData = FutureProvider<NewsModel>((ref) async {
+   NewsRepository _newsRepository= NewsRepositoryApi();
 
   return _newsRepository.fetchAllNews();
 });
