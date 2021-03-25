@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518763347413",
+    "project_id": "riverpod-example",
+    "storage_bucket": "riverpod-example.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518763347413:android:6bf3a013f02be087ce915c",
+        "android_client_info": {
+          "package_name": "com.mahmoudalaa.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518763347413-ikegm1bmobl3i20ad4570f76poe9jc71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYQ7kNW6_zoXmdRCuhHsMcRa_lkot4Sdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518763347413-ikegm1bmobl3i20ad4570f76poe9jc71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

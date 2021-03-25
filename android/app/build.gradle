@@ -32,6 +32,7 @@ android {
         applicationId "com.example.state_managment"
         minSdkVersion 16
         targetSdkVersion 30
+        multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
@@ -48,3 +49,7 @@ android {
 flutter {
     source '../..'
 }
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+}
+apply plugin: 'com.google.gms.google-services'
