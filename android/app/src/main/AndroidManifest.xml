@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.state_managment">
+    package="com.mahmoudalaa.app">
 
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="state_managment"
+        android:label="Riverpod Examples"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
