@@ -41,6 +41,8 @@ dependencies:
   # A Flutter plugin to use the Firebase Core API, which enables connecting to multiple Firebase apps.
   firebase_core: ^0.7.0
 
+  # A Flutter plugin for using the native Facebook Login SDKs on Android and iOS.
+  flutter_facebook_auth: ^2.0.2+1
 
 
 
