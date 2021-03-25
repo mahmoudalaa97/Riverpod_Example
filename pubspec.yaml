@@ -43,6 +43,11 @@ dependencies:
 
   # A Flutter plugin for using the native Facebook Login SDKs on Android and iOS.
   flutter_facebook_auth: ^2.0.2+1
+  
+  #  A Flutter plugin for Google Sign In.
+  google_sign_in: ^4.4.0
+
+
 
 
 
