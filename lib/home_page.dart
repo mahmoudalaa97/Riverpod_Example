@@ -4,7 +4,7 @@ import 'package:state_managment/Widgets/custom_button.dart';
 
 import 'View/LoginWithSocial/login_with_social_page.dart';
 import 'View/counter_page.dart';
-import 'View/news_page.dart';
+import 'View/News/news_page.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
