@@ -10,7 +10,7 @@ class NewsRepositoryApi extends NewsRepository {
   @override
   Future<NewsModel> fetchAllNews() async {
     Response _response =
-        await ServicesConstant.instanceDio.get("${ServicesConstant.newsUrl}");
+        await ServicesConstant.instanceDio.get("${ServicesConstant.newsUrlAPI}");
     if (_response.statusCode == 200)
       return NewsModel.fromJson(_response.data);
     else
