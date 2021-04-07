@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:state_managment/View/Movies/movies_page.dart';
 import 'package:state_managment/View/github_search_page.dart';
 import 'package:state_managment/Widgets/custom_button.dart';
 
@@ -16,10 +17,11 @@ class MyHomePage extends StatelessWidget {
         title: Text("Mahmoud Riverpod"),
       ),
       body: GridView(
+        padding: EdgeInsets.all(5),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          childAspectRatio: 1.8,
-          mainAxisSpacing: 5,
+          childAspectRatio: 2,
+          mainAxisSpacing: 3,
         ),
         shrinkWrap: true,
         children: <Widget>[
@@ -62,7 +64,18 @@ class MyHomePage extends StatelessWidget {
                     builder: (context) => LoginWithSocialPage(),
                   ));
             },
-          )
+          ),
+          Buttons(
+            title: "Movies Page",
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MoviesPage(),
+                  ));
+            },
+          ),
+
         ],
       ),
     );
