@@ -18,4 +18,7 @@ class ServicesConstant{
 
   static String newsUrl="https://newsapi.org/v2/everything?q=Apple&from=2021-03-20&sortBy=popularity&apiKey=4419d327234140b6b60bb2f4874aa8f1";
 
+  /// Move API
+  static String movieUrlAPI = "https://api.themoviedb.org/3/search/movie?api_key=398652d590bd6cd5c768c67e321db8e6";
+
 }
