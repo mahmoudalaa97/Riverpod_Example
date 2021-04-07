@@ -9,7 +9,7 @@ abstract class GithubRepository {
 class GithubRepositoryApi extends GithubRepository{
   @override
   Future<UserGithubDataModel> fetchUserData(String username)async {
-    String url = "${ServicesConstant.getUserInfoUrl}"+"$username";
+    String url = "${ServicesConstant.githubUrlAPI}"+"$username";
     final _response = await ServicesConstant.instanceDio.get(url);
     if (_response.statusCode == 200)
      return  UserGithubDataModel.fromJson(_response.data);
