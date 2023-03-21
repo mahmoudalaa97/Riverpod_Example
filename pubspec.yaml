@@ -30,16 +30,16 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_riverpod: 0.13.1+1
   cached_network_image: ^2.5.1
-  dio: ^3.0.10
+  dio: ^5.0.3
 
   # The Font Awesome Icon pack available as set of Flutter Icons.
   font_awesome_flutter: ^9.0.0
 
   # A Flutter plugin to use the Firebase Authentication API.
-  firebase_auth: ^0.20.1
+  firebase_auth: ^0.21.0-nullsafety.0
 
   # A Flutter plugin to use the Firebase Core API, which enables connecting to multiple Firebase apps.
-  firebase_core: ^0.7.0
+  firebase_core: ^0.8.0-nullsafety.1
 
   # A Flutter plugin for using the native Facebook Login SDKs on Android and iOS.
   flutter_facebook_auth: ^2.0.2+1
